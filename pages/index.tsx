@@ -11,8 +11,7 @@ const Home: NextPage = () => {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
 
-			<main>
-				<h1 className="font-sans font-bold h-14">Nombre Telefono</h1>
+			<main className="font-sans font-bold h-14 pt-5">
 				<Contact />
 			</main>
 		</>
