@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Footer from "./footer";
 
 const Contact = () => {
 	return (
@@ -23,26 +24,27 @@ const Contact = () => {
 						<div className="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
 						<div className="max-w-7xl mx-auto sm:px-6 lg:px-8">
 							<div className="relative shadow-xl sm:rounded-2xl sm:overflow-hidden">
-								<div className="absolute inset-0 ">
+								<div className="absolute inset-0">
 									<Image
-										height={1005}
-										width={1250}
-										className="h-full w-full object-cover"
-										src="/images/background.jpg"
+										height={1100}
+										width={3250}
+										className="h-full w-full object-cover md:h-full md:w-full md:object-cover sm:w-full sm:h-full sm:object-cover"
+										// src="/images/background.jpg"
+										src="/images/tailwind.png"
 										alt="Fondo"
 									/>
 									<div className="absolute inset-0" />
 								</div>
 								<div className="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
 									<h1 className="text-center text-4xl font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
-										<span className="block text-6xl font-extrabold text-transparent bg-clip-text from-primary to-secondary bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500">
+										<span className="block text-6xl font-extrabold text-transparent bg-clip-text from-primary to-secondary bg-gradient-to-r hover:from-pink-500 hover:text-white">
 											Nathalia Miranda Ortiz
 										</span>
 										{/* <span className="block text-indigo-200">
 											Profesional
 										</span> */}
 									</h1>
-									<p className="mt-6 max-w-lg mx-auto text-center text-xl text-gray-600 sm:max-w-3xl font-light hover:font-bold">
+									<p className="mt-6 max-w-lg mx-auto text-center text-xl text-gray-600 sm:max-w-3xl font-light hover:font-semibold hover:text-yellow-400">
 										Gestión de talento &bull; Planeación &bull;
 										Training &bull; Emprendimiento &bull; Innovación
 									</p>
@@ -90,7 +92,7 @@ const Contact = () => {
 										className="h-12"
 										src="/images/rutan.png"
 										alt="Transistor"
-										width={100}
+										width={120}
 										height={50}
 									/>
 								</div>
@@ -107,9 +109,8 @@ const Contact = () => {
 						</div>
 					</div>
 				</div>
-
-				{/* More main page content here... */}
 			</main>
+			<Footer />
 		</div>
 	);
 };
