@@ -1,14 +1,14 @@
 {
 	"name": "transformente",
 	"private": true,
-	"homepage": "https://transformente.com",
+	"homepage": "https://github.com/davidlondonor/transformente/tree/main",
 	"scripts": {
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
 		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist"
+		"deploy": "gh-pages -d build"
 	},
 	"dependencies": {
 		"gh-pages": "^3.2.3",
